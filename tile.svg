@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<svg width="400" height="400" viewBox="0 0 400 400"
+     xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <defs>
+    <style>
+      .tile-body { background: #00838F;
+                   fill: #00838F;
+		   }
+      .event-name { font-family: "Sans", "OpenSans";
+      fill: #80DEEA;
+      font-size: 50px;
+		    }
+		    .detector-lho { fill: #EE0000;}
+		    .detector-llo { fill: #4BA6FF; }
+		    .detector-virgo { fill: #9B59B6; }
+		    .detector-geo { fill: #222222; }
+		    .detector-lio { fill: #B0DD8B; }
+		    .detector-kagra { fill: #FFB200; }
+		    #detector-pendant>text, #detector-pendant-lower>text{ fill: white;
+		    font-size: 40px;
+		    text-anchor: middle;
+		    font-family: "Sans", "OpenSans";}
+		    .black-hole { fill: black;}
+		    .neutron-star { fill: #FFFFFF; }
+		    #nsbh-icon {opacity: 0.5; }
+		    #bbh-icon {opacity: 0.5; }
+		    #bns-icon {opacity: 0.5; }
+    </style>
+  </defs>
+  
+  <rect x="0" y="0" width = "400" height = "400" class="tile-body" />
+  <text class="event-name"
+      text-anchor="end"
+	x="400" y="400" fill="#e57373">Event Name</text>
+
+  <defs>
+    <g id="detector-pendant">
+      <polygon 
+	  points="0,0 100,0 50,80"  />
+      <text x="50" y = "40" class="detector-name">D</text>
+    </g>
+  </defs>
+
+  <defs>
+    <g id="detector-pendant-lower">
+      <polygon points="0,80 100,80 50,0"  />
+      <text x="50" y = "65">D</text>
+    </g>
+  </defs>
+
+  <defs>
+    <g id="bbh-icon">
+      <circle cx="-40" cy="50" r="50" />
+      <circle cx="40" cy="-50" r="50" />
+    </g>
+    <g id="nsbh-icon">
+      <circle cx="-40" cy="50" r="50" class="black-hole"/>
+      <circle cx="40" cy="-50" r="50" class="neutron-star" />
+    </g>
+    <g id="bns-icon">
+      <circle cx="-40" cy="50" r="50" class="neutron-star"/>
+      <circle cx="40" cy="-50" r="50" class="neutron-star" />
+    </g>
+  </defs>
+  
+  <!-- <use xlink:href="#detector-pendant" x="300" class="detector-virgo" /> -->
+  <!-- <use xlink:href="#detector-pendant" x="200" class="detector-llo" /> -->
+  <!-- <use xlink:href="#detector-pendant" x="100" class="detector-lho" /> -->
+
+  <!-- <use xlink:href="#detector-pendant-lower" x="250" class="detector-geo" /> -->
+  <!-- <use xlink:href="#detector-pendant-lower" x="150" class="detector-kagra" /> -->
+  <!-- <use xlink:href="#detector-pendant" x="0" class="detector-lio" /> -->
+
+  
+</svg>
